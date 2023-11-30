@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    box-sizing: border-box;
+    background-color: #263ca1; 
+    width: 100%;
+    height: 15vw;
+    color: #f5f4ed; 
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 2vw;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #10255c; 
+    margin: 0;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131a2c; 
+    position: -webkit-sticky; 
+    position: sticky;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: 	#f5f4ed; 
+    text-align: center;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #38b3dd; 
+}
+
+.navbar .active {
+    background-color: #38b3dd; 
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin: 0 auto;
+    padding: 6vw 10vw;
+  }
+
+  
+.gallery .project1{
+    width: 30vw;
+    height: 20vw;
+    background-image: url(https://media.discordapp.net/attachments/877898863254601781/1164794720564813906/image.png?ex=6544829e&is=65320d9e&hm=83219c614eab7b369ab545d7e3814897e5371f55984f0c172496bfb628a46019&=&width=1791&height=1002);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+    border: 2px solid #38b3dd; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    
+}
+
+.gallery .project2{
+    width: 30vw;
+    height: 20vw;
+    background-image: url(https://media.discordapp.net/attachments/877898863254601781/1164796026255843349/image.png?ex=654483d5&is=65320ed5&hm=9356afc2d6a7ca1add1e983b725d538c62302c002d8734f6945aedbcdc0239d9&=&width=1791&height=1000);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+    border: 2px solid #38b3dd; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.gallery .caption{
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    padding-top: 18vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar li a {
+        font-size: 4vw;
+    }
+
+    .header {
+        font-size: 5vw;
+        height: 35vw;
+    }
+
+    .gallery .project1, .gallery .project2{
+        width: 50vw;
+        height: 30vw;
+        margin: 10vw;
+    }
+
+    .gallery .caption {
+        font-size: 4vw; 
+        padding-top: 26vw; 
+    }
+
+    
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.filter button {
+    padding: 10px 20px;
+    margin: 3px;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.filter button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.filter button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.gallery .project4{
+    margin-top: 20%;
+    width: 30vw;
+    height: 20vw;
+    background-image: url(https://cdn.discordapp.com/attachments/877898863254601781/1179644555692343396/image.png?ex=657a889a&is=6568139a&hm=b7401fdd0f0066ee28aa4dc7e6f2e87a56f8f7af8dcb4bb76bc67fb7f2e5ea37&);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+    border: 2px solid #38b3dd; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    
+}
+
+.gallery .project3{
+    margin-top: 20%;
+    width: 30vw;
+    height: 20vw;
+    background-image: url(https://cdn.discordapp.com/attachments/877898863254601781/1179645536475815956/image.png?ex=657a8984&is=65681484&hm=51737f9e5022f3f3f5c7e75ad334c17f264f21bc039bc5eca6bcaf6cefcd5f6d&);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+    border: 2px solid #38b3dd; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    
+}

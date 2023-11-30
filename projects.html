@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script>
+            $(document).ready(function(){
+            $("#show").click(function(){
+                $("a").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showCSS").click(function(){
+                $(".gallery a").hide();
+                $(".CSS").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showFramework").click(function(){
+                $(".gallery a").hide();
+                $(".Framework").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#showJquery").click(function(){
+                $(".gallery a").hide();
+                $(".Jquery").show();
+                $(".filter button").removeClass("active"); 
+                $(this).addClass("active");
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="socialmedia.html">Social Media</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+        </ul>
+        </div>
+
+       
+
+        <div class="header fade-in">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="filter">
+            <button id="show">All</button>
+            <button id="showCSS">CSS</button>
+            <button id="showFramework">Framework</button>
+            <button id="showJquery">Jquery</button>
+        </div>
+
+        <div class="gallery fade-in">
+            <a class="CSS" href="https://kevinj0nathan.github.io/HCI-ASSIGNMENT-2/" target="_blank">
+                <div class="project1">
+                    <p class="caption">Survey</p>
+                </div>
+            </a>
+
+            <a class="CSS" href="https://kevinj0nathan.github.io/HCI-Assignment-3/" target="_blank">
+                <div class="project2">
+                    <p class="caption">Old Portfolio</p>
+                </div>
+            </a>
+
+            <a class="Framework" href="https://kevinj0nathan.github.io/HCI-ASSIGNMENT-5./" target="_blank">
+                <div class="project3">
+                    <p class="caption">Bootstrap Portfolio</p>
+                </div>
+            </a>
+
+            <a class="CSS Jquery" href="https://kevinj0nathan.github.io/HCI-ASSIGNMENT-6/" target="_blank">
+                <div class="project4">
+                    <p class="caption">Jquery Practice</p>
+                </div>
+            </a>
+        </div>
+
+</body>
+</html>
